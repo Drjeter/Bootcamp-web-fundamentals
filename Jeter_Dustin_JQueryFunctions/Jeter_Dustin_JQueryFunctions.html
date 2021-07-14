@@ -1,0 +1,183 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JQueryFunctions</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('input').click(function() {
+                    var value = $(this).attr('value');
+                    if (value == 'Click'){
+                        var background = $('div').css("background-color");
+                        console.log(background)
+                        if (background == 'rgb(255, 0, 0)'){
+                            $('div').css("background-color", "lightblue");
+                        }else{
+                            $('div').css("background-color", "red");
+                        }
+                    }else if (value == 'Hide'){
+                        $('h1').hide();
+                    }else if (value == 'Show'){
+                        $('h1').show();
+                    }else if (value == 'Toggle'){
+                        $('p').toggle('slow');
+                    }else if (value == 'Slide Down'){
+                        $('h1').slideDown();
+                    }else if (value == 'Slide Up'){
+                        $('h1').slideUp();
+                    }else if (value == 'Slide Toggle'){
+                        $('h1').slideToggle();
+                    }else if (value == 'Fade In'){
+                        $('h1').fadeIn();
+                    }else if (value == 'Fade Out'){
+                        $('h1').fadeOut();
+                    }else if (value == 'Add Class'){
+                        $(this).addClass('classadded');
+                    }else if (value == 'Before'){
+                        $('p').before("<p>This comes before...</p>");
+                    }else if (value == 'After'){
+                        $('p').after("<p>This comes after...</p>");
+                    }else if (value == 'Append'){
+                        $('h1').append("<span>Section Title</span>");
+                    }else if (value == 'Html'){
+                        $( "h1" ).html( "<b>Too Much!</b>" );
+                    }else if (value == 'Attr'){
+                        alert('You selected attr')
+                        $(div).css(background-color, "red");
+                    }else if (value == 'Val'){
+                        alert('You selected val')
+                        $(div).css(background-color, "red");
+                    }else if (value == 'Text'){
+                        alert('You selected text')
+                        $(div).css(background-color, "red");
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <h1>Click</h1>
+            <input type="button" value="Click">
+            <p>
+                Click the "Click" button to change the background color
+            </p>
+        </div>
+        <div>
+            <h1>Hide</h1>
+            <input type="button" value="Hide">
+            <p>
+                Click the "Hide" button to hide the Section Titles
+            </p>
+        </div>
+        <div>
+            <h1>Show</h1>
+            <input type="button" value="Show">
+            <p>
+                Click the "Show" button to show the Section Titles
+            </p>
+        </div>
+        <div>
+            <h1>Toggle</h1>
+            <input type="button" value="Toggle">
+            <p>
+                Click the "Toggle" button to toggle the paragraphs
+            </p>
+        </div>
+        <div>
+            <h1>Slide Down</h1>
+            <input type="button" value="Slide Down">
+            <p>
+                Click the "Slide Down" button to slide the Section Titles down
+            </p>
+        </div>
+        <div>
+            <h1>Slide Up</h1>
+            <input type="button" value="Slide Up">
+            <p>
+                Click the "Slide Up" button to slide the Section Titles up
+            </p>
+        </div>
+        <div>
+            <h1>Slide Toggle</h1>
+            <input type="button" value="Slide Toggle">
+            <p>
+                Click the "Slide Toggle" button to slide toggle the Section Titles
+            </p>
+        </div>
+        <div>
+            <h1>Fade In</h1>
+            <input type="button" value="Fade In">
+            <p>
+                Click the "Fade In" button to fade the Section Titles in
+            </p>
+        </div>
+        <div>
+            <h1>Fade Out</h1>
+            <input type="button" value="Fade Out">
+            <p>
+                Click the "Fade Out" button to fade the Section Titles out
+            </p>
+        </div>
+        <div>
+            <h1>Add Class</h1>
+            <input type="button" value="Add Class">
+            <p>
+                Click the "Add Class" button to add a new class to this button
+            </p>
+        </div>
+        <div>
+            <h1>Before</h1>
+            <input type="button" value="Before">
+            <p>
+                Click the "Before" button to add words before each paragraph
+            </p>
+        </div>
+        <div>
+            <h1>After</h1>
+            <input type="button" value="After">
+            <p>
+                Click the "After" button to add words after each paragraph
+            </p>
+        </div>
+        <div>
+            <h1>Append</h1>
+            <input type="button" value="Append">
+            <p>
+                Click the "Append" button to add words after each section title
+            </p>
+        </div>
+        <div>
+            <h1>Html</h1>
+            <input type="button" value="Html">
+            <p>
+                Click the "Html" button to edit the section titles
+            </p>
+        </div>
+        <div>
+            <h1>Attr</h1>
+            <input type="button" value="Attr">
+            <p>
+                Description
+            </p>
+        </div>
+        <div>
+            <h1>Val</h1>
+            <input type="button" value="Val">
+            <p>
+                Description
+            </p>
+        </div>
+        <div>
+            <h1>Text</h1>
+            <input type="button" value="Text">
+            <p>
+                Description
+            </p>
+        </div>
+    </body>
+    </html>

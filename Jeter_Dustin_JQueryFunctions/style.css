@@ -1,0 +1,20 @@
+/*CSS reset settings here*/
+*{ 
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    background-color: lightblue;
+    padding: 1%;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+input{
+    margin-left: 10%;
+}
+p{
+    display: inline;
+    margin-left: 10%;
+}
